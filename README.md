@@ -15,7 +15,6 @@ Each problem has:
 Some folders may have Test.java files for a better understanding
 
 
-
 ## Topics that will be Covered 
 - Arrays
 - Strings
