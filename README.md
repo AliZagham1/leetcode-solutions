@@ -12,6 +12,8 @@ Each problem has:
 - `Solution.java`: Java implementation
 - `README.md`: Problem summary and approach
 
+Some folders may have Test.java files for a better understanding
+
 Topics that will be covered :
 
 ## Topics Covered
