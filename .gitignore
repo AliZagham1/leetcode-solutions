@@ -1,0 +1,12 @@
+# Java class files
+*.class
+
+# VS Code settings (optional)
+.vscode/
+
+# macOS system files (optional)
+.DS_Store
+
+# Compiled output folders (optional)
+out/
+bin/
