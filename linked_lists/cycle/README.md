@@ -6,9 +6,15 @@ Given the `head` of a linked list, determine if the linked list has a **cycle** 
 
 A cycle occurs when a node’s `next` pointer points back to a previous node in the list, forming a loop.
 
-### Example:        |-----| 
- # Input: 3 -> 2 -> 0 -> -4
-  - -4 pointing back to 0
+### Example:       
+ Input: 3 → 2 → 0 → -4
+             ↑      ↓
+             ←←←←←←←←
+
+-4 connects back to node 2, forming a cycle.
+
+      
+  
                  
                  
                 
