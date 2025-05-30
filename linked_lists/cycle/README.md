@@ -7,21 +7,14 @@ Given the `head` of a linked list, determine if the linked list has a **cycle** 
 A cycle occurs when a node’s `next` pointer points back to a previous node in the list, forming a loop.
 
 ### Example:       
- Input: 3 → 2 → 0 → -4
-             ↑      ↓
-             ←←←←←←←←
+ Input: [3, 2, 0, -4], pos = 1
 
--4 connects back to node 2, forming a cycle.
-
-      
-  
-                 
-                 
-                
-
+Explanation:
+- The value at index 1 is 2
+- Node with value -4 points back to node with value 2
+- so the result is true
+       
 Expected Output: true
-
-
 
 ## 💡 Approach: Floyd’s Cycle Detection Algorithm (Tortoise and Hare)
 
