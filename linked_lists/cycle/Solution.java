@@ -1,7 +1,5 @@
 package linked_lists.cycle;
 
-
-import linked_lists.LinkedList;
 import linked_lists.ListNode;
 
 
