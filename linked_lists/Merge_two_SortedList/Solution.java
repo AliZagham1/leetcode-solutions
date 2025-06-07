@@ -1,6 +1,6 @@
 package linked_lists.Merge_two_SortedList;
 
-import linked_lists.LinkedList;
+
 import linked_lists.ListNode;
 
 public class Solution{
