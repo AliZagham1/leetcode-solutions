@@ -1,4 +1,4 @@
-package reverse;
+package linked_lists.reverse;
 
 
 import linked_lists.LinkedList;
