@@ -92,6 +92,18 @@ public class BinarySearchTree {
         return recursiveContains(root, value);
 
        }
+       
+    // Minimum value helping method
+    public int minValue(Node currentNode) {
+        while (currentNode.left != null) {
+            currentNode = currentNode.left; // traverse to the leftmost node
+        }
+
+        return currentNode.value;
+
+    }
+    
+    
 
 
      
