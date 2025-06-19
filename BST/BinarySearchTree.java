@@ -92,6 +92,15 @@ public class BinarySearchTree {
         return recursiveContains(root, value);
 
        }
+
+       // Inorder traversal method
+       public void inOrder(Node currentNode) {
+        if (currentNode != null) { // if the current node is not null
+            inOrder(currentNode.left); // traverse to the left
+            System.out.println(currentNode.value); // print the value
+            inOrder(currentNode.right); // traverse to the right
+        }
+       }
        
     // Minimum value helping method
     public int minValue(Node currentNode) {
