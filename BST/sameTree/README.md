@@ -13,7 +13,7 @@ Two binary trees are considered the same if they are structurally identical and 
 
  Output: `true`
 
-### 📂 Example 2 (example2.png)
+### 📂 Example 2 
 
 ![Example Tree](./example2.png)
 
