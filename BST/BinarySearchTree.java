@@ -101,6 +101,33 @@ public class BinarySearchTree {
             inOrder(currentNode.right); // traverse to the right
         }
        }
+
+      // Delete node
+       public Node deleteNode (Node currentNode, int value) {
+        if (currentNode == null) { // if the current node is null
+            return null; // return null
+        }
+
+        if (value < currentNode.value) { // if the value is less than the current node
+            currentNode.left = deleteNode(currentNode.left, value); // delete the left child
+        } else if (value > currentNode.value) { // if the value is greater than the current node
+            currentNode.right = deleteNode(currentNode.right, value); // delete the right child
+        } else {
+            if (currentNode.left == null && currentNode.right == null) { // if the current node has no children
+                return null; // return null
+            } else if (currentNode.left == null) { // if the current node has only a right child
+                return currentNode.right; // return the right child
+            } else if (currentNode.right == null) { // if the current node has only a left child
+                return currentNode.left; // return the left child
+            } else {
+                int minValue = minValue(currentNode.right); // find the minimum value in the right subtree
+                currentNode.value = minValue; // assign the minimum value to the current node
+                currentNode.right = deleteNode(currentNode.right, minValue); // delete the minimum value from the right subtree
+            }
+        }
+
+        return currentNode;
+       }
        
     // Minimum value helping method
     public int minValue(Node currentNode) {
