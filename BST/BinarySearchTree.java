@@ -102,6 +102,15 @@ public class BinarySearchTree {
         }
        }
 
+       // Postorder traversal method
+       public void postOrder(Node currentNode) {
+        if (currentNode != null) { // if the current node is not null
+            postOrder(currentNode.left); // traverse to the left
+            postOrder(currentNode.right); // traverse to the right
+            System.out.println(currentNode.value); // print the value
+        }
+       }
+
       // Delete node
        public Node deleteNode (Node currentNode, int value) {
         if (currentNode == null) { // if the current node is null
