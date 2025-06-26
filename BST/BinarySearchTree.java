@@ -1,5 +1,7 @@
 package BST;
 
+import java.util.*;
+
 public class BinarySearchTree {
         public Node root;
 
@@ -110,6 +112,30 @@ public class BinarySearchTree {
             System.out.println(currentNode.value); // print the value
         }
        }
+
+      // Breadth First Search (BFS)
+    public ArrayList<Integer> BFS() {
+      Node currentNode = root; // currentNode is the starting point (root of the tree)
+      Queue<Node> queue = new LinkedList<>(); // Queue to store the nodes (not just their values)
+      ArrayList<Integer> results = new ArrayList<>(); // ArrayList to store node values in BFS order
+
+      queue.add(currentNode); // Start by adding the root to the queue
+
+      while (queue.size() > 0) { // Run the loop until the queue is empty
+        currentNode = queue.remove(); // Remove the front node from the queue
+        results.add(currentNode.value); // Add its value to the result list
+
+        if (currentNode.left != null) { // If the left child exists,
+            queue.add(currentNode.left); // add it to the queue
+        }
+
+        if (currentNode.right != null) { // If the right child exists,
+            queue.add(currentNode.right); // add it to the queue
+        }
+    }
+
+    return results; // Return the final BFS traversal result
+}
 
       // Delete node
        public Node deleteNode (Node currentNode, int value) {
