@@ -95,6 +95,18 @@ public class BinarySearchTree {
 
        }
 
+       // PreOrder traversal method
+       public void PreOrder(Node currentNode){
+        if (currentNode == null) {  // Base Case: if the node is null
+            return;
+        }
+        System.out.println(currentNode.value);  // print the current node value
+        PreOrder(currentNode.left); // traverse left nodes
+        PreOrder(currentNode.right);  // traverse right nodes
+
+
+       }
+
        // Inorder traversal method
        public void inOrder(Node currentNode) {
         if (currentNode != null) { // if the current node is not null
