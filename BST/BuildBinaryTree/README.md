@@ -35,9 +35,9 @@ This can be implemented using either an index-based approach (optimal) or an arr
 
 # 🖼️ Example
 
-[Build Tree](./example.png)
+![Build Tree](./example.png)
 
-⏳ Time and Space Complexity
+# ⏳ Time and Space Complexity
 
 - Time		O(n²)
 - Space		O(n²) (due to array copies & recursion)
