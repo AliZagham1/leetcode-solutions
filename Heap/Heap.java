@@ -39,6 +39,50 @@ public class Heap {
         }
     }
 
+    public Integer remove() {
+        if (heap.size() == 0){
+            return null;
+        }
+
+        if (heap.size() == 1) {
+            return heap.remove(0);
+        }
+
+        int maxIndex = heap.get(0);
+        heap.set(0, heap.remove(heap.size()-1));
+        sinkDown(0);
+        return maxIndex;
+    }
+
+    public void sinkDown(int index) { // Sink down the value at the given index
+        int maxIndex = index;   // Initialize maxIndex to the current index
+        while (true){
+        int leftIndex = leftChild(index); // Get the index of the left child
+        int rightIndex = rightChild(index);  // Get the index of the right child
+        if (leftIndex < heap.size()  && heap.get(leftIndex) > heap.get(maxIndex)) {  // If the left child exists and is greater than the current max
+            maxIndex = leftIndex;  // Set maxIndex to the index of the left child
+        }
+        if (rightIndex < heap.size() && heap.get(rightIndex) > heap.get(maxIndex)) {  // If the right child exists and is greater than the current max
+            maxIndex = rightIndex;  // Set maxIndex to the index of the right child
+        }
+
+        if (maxIndex != index) {  // If maxIndex is not the current index
+            swap(index, maxIndex);  // Swap the values at the current index and maxIndex
+            index = maxIndex;  // Set index to maxIndex
+        } else {
+            return;  // Return if no swaps were made
+        }
+
+    }
+
+
+
+    }
+
+    
+
+
+
 
     
 }
