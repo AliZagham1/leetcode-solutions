@@ -48,10 +48,10 @@ public class Heap {
             return heap.remove(0);
         }
 
-        int maxIndex = heap.get(0);
+        int maxValue = heap.get(0);
         heap.set(0, heap.remove(heap.size()-1));
         sinkDown(0);
-        return maxIndex;
+        return maxValue;
     }
 
     public void sinkDown(int index) { // Sink down the value at the given index
