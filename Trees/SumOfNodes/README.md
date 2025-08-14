@@ -4,8 +4,6 @@ Given the root of a binary tree, calculate and return the sum of the values of a
 
 # Example
 ![Example of the sum of Nodes in the tree](./example.png)
-Explanation:
-5 + 3 + 7 + 2 + 4 = 21
 
 
 # Approach (BFS)
