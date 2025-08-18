@@ -1,4 +1,4 @@
-package reverseString;
+package Strings.reverseString;
 
 public class Solution {
     public void reverseString (char[] c) {
