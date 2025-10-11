@@ -1,6 +1,6 @@
 package two_pointer.MaxSubArrayAvg;
 
-public class Solution {
+
     class Solution {
         public double findMaxAverage(int[] nums, int k) {
             // Find the sum of the first window (first k elements)
@@ -24,4 +24,4 @@ public class Solution {
     }
     
     
-}
+
