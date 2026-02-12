@@ -21,6 +21,10 @@ public class LinkedList {
     public void setHead(ListNode newHead) {
         this.head = newHead;
     }
+
+    public ListNode getTail(){
+        return this.tail;
+    }
     
     
 
